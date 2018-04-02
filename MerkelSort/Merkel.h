@@ -11,7 +11,7 @@
 namespace Merkel
 {
 	/// <summary>
-	/// Sort using Merkel's approach on "new" technology
+	/// Sort using Merkel's approach on "new land" technology
 	/// </summary>
 	/// <returns>Sorted items</returns>
 	template <class _T> std::vector<typename _T> sort(std::vector<typename _T> items)
@@ -31,7 +31,7 @@ namespace Merkel
 			// Decide if this item is relevant for now
 			if ((rand() % 88) == 11)
 			{
-				// Discuss with people who have zero knowledge where to position this item
+				// Discuss with people who have zero knowledge about where to position this item
 				// So push it somewhere
 				push_index = static_cast<size_t>(rand() % (ret.size() + 1));
 				ret.insert(ret.begin() + push_index, items[index]);
